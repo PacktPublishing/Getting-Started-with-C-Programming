@@ -1,0 +1,18 @@
+#include <iostream>
+#include <String>
+
+int main()
+{
+	int trainSize = 10;
+	int carCount = 0;
+
+	for (int i = 0; i < trainSize; i++)
+	{
+		carCount++;
+		std::cout << "i = " << i << std::endl;
+	}
+	
+	std::cout << "There were " << carCount << " cars in the train." << std::endl;
+	std::cin.ignore();
+	return 0;
+}

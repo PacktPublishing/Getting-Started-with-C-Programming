@@ -1,0 +1,41 @@
+#include <iostream>
+#include <String>
+
+
+struct Movie {
+	std::string name;
+	std::string rating;
+	int releaseYear;
+	int totalSales;
+};
+
+void printMovie(Movie &movie)
+{
+	std::cout << "Movie Name: " << movie.name << std::endl;
+	std::cout << "Movie Rating: " << movie.rating << std::endl;
+	std::cout << "Movie Release Year: " << movie.releaseYear << std::endl;
+	std::cout << "Movie Total Sales: " << movie.totalSales << std::endl << std::endl;
+}
+
+int main()
+{
+	Movie movieA;
+	Movie movieB;
+
+	movieA.name = "Spaceballs";
+	movieA.rating = "PG";
+	movieA.releaseYear = 1987;
+	movieA.totalSales = 38119483;
+	
+	movieB.name = "Robin Hood: Men in Tights";
+	movieB.rating = "PG-13";
+	movieB.releaseYear = 1993;
+	movieB.totalSales = 35739755;
+
+	printMovie(movieA);
+	printMovie(movieB);
+
+	system("pause");
+
+	return 0;
+}

@@ -1,0 +1,25 @@
+#include <iostream>
+
+int main()
+{
+	char grade = 'A';
+	
+	switch (grade)
+	{
+	case 'A':
+		std::cout << "Great Job" << std::endl;
+		break;
+	case 'B':
+		std::cout << "Almost Perfect" << std::endl;
+		break;
+	case 'C':
+		std::cout << "Try Harder" << std::endl;
+		break;
+	default:
+		std::cout << "You might need a tutor." << std::endl;
+		break;
+	}
+	
+	std::cin.ignore();
+	return 0;
+}

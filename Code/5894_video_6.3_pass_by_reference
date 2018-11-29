@@ -1,0 +1,20 @@
+#include <iostream>
+#include <String>
+
+void increment(int &var)
+{
+	var++;
+	std::cout << "Parameter in function: " << var << std::endl << std::endl;
+}
+
+int main()
+{
+	int var = 0;
+		
+	std::cout << "Parameter in Main before funcation call: "<< var << std::endl << std::endl;
+	increment(var);
+	std::cout << "Parameter in Main after funcation call: " << var << std::endl << std::endl;
+	system("pause");
+
+	return 0;
+}

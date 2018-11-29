@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+
+void printVector(std::vector<int> vec)
+{
+	for (int i = 0; i < vec.size(); i++)
+	{
+		std::cout << i << ": " << vec[i] << std::endl;
+	}
+}
+
+int main()
+{
+	std::vector<int> vectorList;
+
+	vectorList.push_back(11);
+	vectorList.push_back(22);
+	vectorList.push_back(33);
+	vectorList.push_back(44);
+	vectorList.push_back(55);
+	
+	std::cout << "Vector Size: " << vectorList.size()  << std::endl;
+	printVector(vectorList);
+	std::cout << std::endl;
+
+	vectorList.pop_back();
+	std::cout << "Vector Size: " << vectorList.size() << std::endl;
+	printVector(vectorList);
+	system("pause");
+
+	return 0;
+}

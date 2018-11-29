@@ -1,0 +1,20 @@
+#include <iostream>
+#include <String>
+
+int main()
+{
+	int rowSize = 4;
+	int columnSize = 3;
+	
+	for(int row = 1; row <= rowSize; row++)
+	{
+		for(int column = 1; column <= columnSize; column++)
+		{
+			std::cout << "Row: " << row << " Column: " << column << std::endl;
+		}
+	}
+	
+	std::cout << "End of table traversal<< std::endl;
+	std::cin.ignore();
+	return 0;
+}

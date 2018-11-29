@@ -1,0 +1,42 @@
+#include <iostream>
+#include <String>
+
+int main()
+{
+	std::string grade = "";
+	int testScore = 80;
+	
+	if (testScore <= 90)
+	{
+		if (testScore <=80)
+		{
+			if (testScore <=70)
+			{
+				if (testScore <=80)
+				{
+					grade = "F";
+				}
+				else
+				{
+					grade = "D";
+				}
+			}
+			else
+			{
+				grade = "C";
+			}
+		}
+		else
+		{
+			grade = "B";
+		}
+	}
+	else
+	{
+		grade = "A";
+	}
+	
+	std::cout << grade << std::endl;
+	std::cin.ignore();
+	return 0;
+}

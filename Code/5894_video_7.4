@@ -1,0 +1,18 @@
+#include <iostream>
+#include <map>
+#include <String>
+
+int main()
+{
+	std::map<int, std::string> mapList;
+
+	mapList.insert(std::pair<int, std::string>(5, "Hello"));
+	mapList.insert(std::pair<int, std::string>(7, "World"));
+	
+	std::cout << "Map Size: " << mapList.size()  << std::endl;
+	std::cout << mapList[5] << std::endl;
+	std::cout << mapList[7] << std::endl;
+	system("pause");
+
+	return 0;
+}

@@ -1,0 +1,13 @@
+#include <iostream>
+#include <fstream>
+
+int main()
+{
+	std::ofstream outFile;
+
+	outFile.open("c:\\temp\\outFile.txt");
+	outFile << "I am writing into this file.\n";
+	outFile << "Goodbye!\n";
+	outFile.close();
+	return 0;
+}

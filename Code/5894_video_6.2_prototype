@@ -1,0 +1,103 @@
+#include <iostream>
+#include <String>
+
+void clearScreen();
+float addition(float, float);
+float subtraction(float, float);
+float multiplication(float, float);
+float division(float, float);
+
+int main()
+{
+	float firstNumber;
+	float secondNumber;
+	float answer;
+	int userResponse;
+	bool continueCalcuator = true;
+
+	while (continueCalcuator)
+	{
+		clearScreen();
+		std::cout << "CALCULATOR PROGRAM" << std::endl;
+		std::cout << "1) Addition" << std::endl;
+		std::cout << "2) Subtraction" << std::endl;
+		std::cout << "3) Multiplication" << std::endl;
+		std::cout << "4) Division" << std::endl;
+		std::cout << "5) EXIT" << std::endl;
+		std::cout << "Please make a selection (1-5): ";
+		std::cin >> userResponse;
+
+		if (userResponse > 5 || userResponse < 1) {
+			std::cout << "Incorrect choice please choose again." << std::endl;
+			system("pause");
+		}
+		else if (userResponse == 5)
+		{
+			continueCalcuator = false;
+		}
+		else
+		{
+			std::cout << "Please enter the first number" << std::endl;
+			std::cin >> firstNumber;
+
+			std::cout << "Please enter the second number" << std::endl;
+			std::cin >> secondNumber;
+
+			if (userResponse == 1)
+			{
+				answer = addition(firstNumber, secondNumber);
+				std::cout << firstNumber << " + " << secondNumber << " = " << answer << std::endl;
+			}
+			else if (userResponse == 2)
+			{
+				answer = subtraction(firstNumber, secondNumber);
+				std::cout << firstNumber << " - " << secondNumber << " = " << answer << std::endl;
+			}
+			else if (userResponse == 3)
+			{
+				answer = multiplication(firstNumber, secondNumber);
+				std::cout << firstNumber << " * " << secondNumber << " = " << answer << std::endl;
+			}
+			else
+			{
+				answer = division(firstNumber, secondNumber);
+				std::cout << firstNumber << " / " << secondNumber << " = " << answer << std::endl;
+			}
+			system("pause");
+		}
+	}
+	return 0;
+}
+
+void clearScreen()
+{
+	system("CLS");
+}
+
+float addition(float firstNumber, float secondNumber)
+{
+	float result;
+	result = firstNumber + secondNumber;
+	return result;
+}
+
+float subtraction(float firstNumber, float secondNumber)
+{
+	float result;
+	result = firstNumber - secondNumber;
+	return result;
+}
+
+float multiplication(float firstNumber, float secondNumber)
+{
+	float result;
+	result = firstNumber * secondNumber;
+	return result;
+}
+
+float division(float firstNumber, float secondNumber)
+{
+	float result;
+	result = firstNumber / secondNumber;
+	return result;
+}

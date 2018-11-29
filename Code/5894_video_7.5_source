@@ -1,0 +1,26 @@
+#include <iostream>
+#include "Calculator.h"
+
+int main()
+{
+	Calculator calc;
+
+	calc.setFirstNumber(4);
+	calc.setSecondNumber(6);
+
+	std::cout << "Addtion of: " << calc.getFirstNumber() << " + " <<
+		calc.getSecondNumber() << " = " << calc.addition() << std::endl;
+
+	std::cout << "Subtraction of: " << calc.getFirstNumber() << " - " <<
+		calc.getSecondNumber() << " = " << calc.subtraction() << std::endl;
+
+	std::cout << "Multiplication of: " << calc.getFirstNumber() << " * " <<
+		calc.getSecondNumber() << " = " << calc.multiplication() << std::endl;
+
+	std::cout << "Division of: " << calc.getFirstNumber() << " / " <<
+		calc.getSecondNumber() << " = " << calc.division() << std::endl;
+
+	system("pause");
+
+	return 0;
+}

@@ -1,0 +1,14 @@
+#include <iostream>
+#include <String>
+
+int main()
+{
+	std::string grade = "";
+	int testScore = 60;
+	
+	(testScore >= 70) ? grade = "PASS" : grade = "FAIL";
+	
+	std::cout << grade << std::endl;
+	std::cin.ignore();
+	return 0;
+}

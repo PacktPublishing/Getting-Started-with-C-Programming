@@ -1,0 +1,18 @@
+#include <iostream>
+#include <String>
+
+int main()
+{
+	int trainSize = 10;
+	int carCount = 0;
+
+	do
+	{
+		carCount++;
+		trainSize--;
+	} while (trainSize != 0);
+	
+	std::cout << "There were " << carCount << " cars in the train." << std::endl;
+	std::cin.ignore();
+	return 0;
+}

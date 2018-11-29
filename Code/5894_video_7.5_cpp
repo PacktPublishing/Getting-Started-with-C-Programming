@@ -1,0 +1,49 @@
+#include "Calculator.h"
+
+Calculator::Calculator()
+{
+}
+
+Calculator::~Calculator()
+{
+}
+
+float Calculator::addition()
+{
+	return firstNumber + secondNumber;
+}
+
+float Calculator::subtraction()
+{
+	return firstNumber - secondNumber;
+}
+
+float Calculator::multiplication()
+{
+	return firstNumber * secondNumber;
+}
+
+float Calculator::division()
+{
+	return firstNumber / secondNumber;
+}
+
+void Calculator::setFirstNumber(float inFloat)
+{
+	firstNumber = inFloat;
+}
+
+void Calculator::setSecondNumber(float inSecondFloat)
+{
+	secondNumber = inSecondFloat;
+}
+
+float Calculator::getFirstNumber()
+{
+	return firstNumber;
+}
+
+float Calculator::getSecondNumber()
+{
+	return secondNumber;
+}

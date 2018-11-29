@@ -1,0 +1,20 @@
+#pragma once
+class Calculator
+{
+private:
+	float firstNumber;
+	float secondNumber;
+
+public:
+	Calculator();
+	~Calculator();
+
+	float addition();
+	float subtraction();
+	float multiplication();
+	float division();
+	void setFirstNumber(float);
+	void setSecondNumber(float);
+	float getFirstNumber();
+	float getSecondNumber();
+};

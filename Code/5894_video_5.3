@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+
+int main()
+{
+	std::string line;
+	std::ifstream file;
+
+	file.open("c:\\temp\\testInput.txt");
+
+	if (file.is_open())
+	{
+		while (std::getline(file, line))
+		{
+			std::cout << line << std::endl;
+		}
+		file.close();
+	}
+	else
+	{
+		std::cout << "Unable to open file" << std::endl;
+	}
+	system("pause");
+	return 0;
+}
